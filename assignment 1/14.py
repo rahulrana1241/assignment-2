@@ -1,4 +1,4 @@
-str = input('enter any input: ')
-str2 = str.split(',')
-str2.sort()
-print(',').join(str)
+items = input("Input comma separated sequence of words")
+words = [word for word in items.split(",")]
+print(",".join(sorted(list(set(words)))))
+
